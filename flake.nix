@@ -178,6 +178,10 @@
               };
               taplo.enable = true;
               xmllint.enable = true;
+              yamlfmt = {
+                enable = true;
+                settings.formatter.retain_line_breaks_single = true; # Blank line after the license
+              };
             };
             settings.formatter.xmllint.includes = [ "*.plist" ];
           };
